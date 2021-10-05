@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+        <!--===== JQUERY CDN =====-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <!-- ===== CSS ===== -->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <!-- ===== BOX ICONS ===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+        <title>Francesco Giusti</title>
+    </head>
+    <body>
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="#" class="nav__logo">Francesco Giusti</a>
+                </div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">Chi sono</a></li>
+                        <li class="nav__item"><a href="#skills" class="nav__link">Esperienza</a></li>
+                        <!-- <li class="nav__item"><a href="#portfolio" class="nav__link">Progetti</a></li> -->
+                        <li class="nav__item"><a href="#Contact" class="nav__link">Contatti</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+            <!--===== HOME =====-->
+            <section class="home" id="home">
+                <div class="home__container bd-grid">
+                    <h1 class="home__title"><span>Junior Java</span><br>Developer</h1>
+
+                    <div class="home__scroll">
+                        <a href="#about" class="home__scroll-link"><i class='bx bx-up-arrow-alt' ></i>Scorri in basso</a>
+                    </div>
+
+                    <img src="assets/img/profilo.svg" alt="" class="home__img">
+                </div>
+            </section>
+
+            <!--===== ABOUT =====-->
+            <section class="about section" id="about">
+                <h2 class="section-title">Chi sono</h2>
+
+                <div class="about__container bd-grid">
+                    <div class="about__img">
+                        <img src="assets/img/profilo2.png" alt="">
+                    </div>
+
+                    <div>
+                        <h2 class="about__subtitle">Francesco Giusti</h2>
+                        <span class="about__profession">Sviluppatore Java Junior</span>
+                        <p class="about__text">Sei alla ricerca di uno Sviluppatore Junior da inserire all'interno del tuo team?</p>
+                        <p class="about__text">Sto acquisendo sempre più esperienza all'interno di IDM Consulting, rimani aggiornato sui miei progressi.<br>Dai un'occhiata agli ultimi progetti che ho realizzato!</p>
+                        <div class="about__social">
+                            <a href="https://www.linkedin.com/in/francesco-giusti-developer/" class="about__social-icon"><i class='bx bxl-linkedin' ></i></a>
+                            <a href="https://github.com/FraGiusti" class="about__social-icon"><i class='bx bxl-github' ></i></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--===== SKILLS =====-->
+
+
+              <section class="skills section" id="skills">
+
+                <h2 class="section-title">Esperienza</h2>
+              <!--
+                <div class="skills__container bd-grid">
+                    <div class="skills__box">
+                        <h3 class="skills__subtitle">Back-end</h3>
+                        <span class="skills__name">Java</span> <br>
+                        <span class="skills__name">SQL</span> <br>
+                        <span class="skills__name">Spring</span> <br>
+                        <span class="skills__name">Tomcat 8.5</span>
+
+                        <h3 class="skills__subtitle">Front-end</h3>
+                        <span class="skills__name">Html 5</span> <br>
+                        <span class="skills__name">CSS</span> <br>
+                        <span class="skills__name">Bootstrap</span> <br>
+                        <span class="skills__name">Java Script</span> <br>
+                        <span class="skills__name">JQuery</span> <br>
+                    </div>
+
+                    <div class="skills__img">
+                        <img src="assets/img/skill.jpg" alt="">
+                    </div>
+                </div>
+
+                -->
+                <!--===== TIMELINE =====-->
+
+
+                <div class="container bd-grid">
+                <div class="timeline">
+                  <ul>
+                    <li class="left">
+                      <div class="timeline-content">
+                        <h3 class="date">May 2021 - present</h3>
+                        <h2>IDM Consulting - Milano</h2>
+                        <p>Sono stato inserito come Consulente in un progetto di Application Maintenance. <br> Tecnologie: MSSQL, Powershell & Java </p>
+                      </div>
+                    </li>
+                    <li class="right">
+                      <div class="timeline-content">
+                        <h3 class="date">Apr 2021 - May 2021</h3>
+                        <h2>IDM Consulting - Remote</h2>
+                        <p>Idm mi ha accolto con un corso intensivo su Spring, Hibernate & Design Pattern </p>
+                      </div>
+                    </li>
+                    <li class="left">
+                      <div class="timeline-content">
+                        <h3 class="date">2020 - 2021</h3>
+                        <h2>Corso Sviluppatore Java <a class="timeline__text__link right" target="_blank" href="https://italy.generation.org/milano/programmazione-java/">Generation</a></h2>
+                        <p> Corso della durata di 480 ore, costituisce la base delle mie competenze nel mondo dell'IT </p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+            </section>
+
+
+            <!--===== PORTFOLIO =====-->
+            <!-- IDEA: <section class="portfolio section" id="portfolio">
+                <h2 class="section-title">Progetti</h2>
+
+                <div class="portfolio__container bd-grid">
+                    <div class="portfolio__img">
+                        <img src="assets/img/work1.jpg" alt="">
+
+                        <div class="portfolio__link">
+                            <a href="#" class="portfolio__link-name">View details</a>
+                        </div>
+                    </div>
+                    <div class="portfolio__img">
+                        <img src="assets/img/work2.jpg" alt="">
+
+                        <div class="portfolio__link">
+                            <a href="#" class="portfolio__link-name">View details</a>
+                        </div>
+                    </div>
+                    <div class="portfolio__img">
+                        <img src="assets/img/work3.jpg" alt="">
+
+                        <div class="portfolio__link">
+                            <a href="#" class="portfolio__link-name">View details</a>
+                        </div>
+                    </div>
+                    <div class="portfolio__img">
+                        <img src="assets/img/work4.jpg" alt="">
+
+                        <div class="portfolio__link">
+                            <a href="#" class="portfolio__link-name">View details</a>
+                        </div>
+                    </div>
+                    <div class="portfolio__img">
+                        <img src="assets/img/work5.jpg" alt="">
+
+                        <div class="portfolio__link">
+                            <a href="#" class="portfolio__link-name">View details</a>
+                        </div>
+                    </div>
+                    <div class="portfolio__img">
+                        <img src="assets/img/work6.jpg" alt="">
+
+                        <div class="portfolio__link">
+                            <a href="#" class="portfolio__link-name">View details</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-===== CONTACT =====-->
+            <section class="contact section" id="Contact">
+                <h2 class="section-title">Contatti</h2>
+
+                <div class="contact__container bd-grid">
+                    <div class="contact__info">
+                        <h3 class="contact__subtitle">EMAIL</h3>
+                        <span class="contact__text">fra.giusti.job@gmail.com</span>
+
+                        <h3 class="contact__subtitle">CELLULARE</h3>
+                        <span class="contact__text">+39 375 5743 057</span>
+
+                        <h3 class="contact__subtitle">INDIRIZZO</h3>
+                        <span class="contact__text">via Dante Alighieri 8, Lurago d'Erba (CO)</span>
+
+                        <h3 class="contact__subtitle">DATA DI NASCITA</h3>
+                        <span class="contact__text">30-05-1995</span>
+
+                        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"
+                        onload="submitForm()">
+                        </iframe>
+                    </div>
+
+                    <script type="text/javascript">var submitted=false;</script>
+                    <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScC9yotWiz7A6Fw4AhAizplxUvw98bv484UVjJD-ub19KhEMA/formResponse"
+                          method="post" target="hidden_iframe" class="contact__form"
+                          onsubmit="submitted=true;">
+                        <div class="contact__inputs">
+                            <input type="text" id="name" name="entry.661569589" required placeholder="Nome Cognome" class="contact__input">
+                            <input type="mail" id="email" name="entry.1616556604" required placeholder="Email" class="contact__input">
+                        </div>
+
+                        <textarea type="text" id="message"  name="entry.324076886" required placeholder="Messaggio..."cols="0" rows="10" class="contact__input"></textarea>
+
+                        <input type="submit" value="Invia" class="contact__button">
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <!--===== FOOTER =====-->
+        <footer class="footer section">
+            <div class="footer__container bd-grid">
+                <div class="footer__data">
+                    <h2 class="footer__title">FRANCESCO GIUSTI</h2>
+                    <p class="footer__text">Sito personale</p>
+                </div>
+
+                <div class="footer__data">
+                    <h2 class="footer__title">ESPLORA</h2>
+                    <ul>
+                        <li><a href="#home" class="footer__link">Home</a></li>
+                        <li><a href="#about" class="footer__link">Chi sono</a></li>
+                        <li><a href="#skills" class="footer__link">Competenze</a></li>
+                        <!-- IDEA: <li><a href="#portfolio" class="footer__link">Progetti</a></li> -->
+                        <li><a href="#Contact" class="footer__link">Contatti</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__data">
+                    <h2 class="footer__title">SOCIAL</h2>
+                    <a href="https://www.linkedin.com/in/francesco-giusti-developer/" class="about__social-icon"><i class='bx bxl-linkedin' ></i></a>
+                    <a href="https://github.com/FraGiusti" class="about__social-icon"><i class='bx bxl-github' ></i></a>
+                </div>
+
+
+            </div>
+        </footer>
+      </section>
+
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+          <!--===== MAIN JS =====-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
